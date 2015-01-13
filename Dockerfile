@@ -9,6 +9,7 @@ RUN apt-get install -y memcached
 
 # Dependence of pg gem
 RUN apt-get install -y postgresql-contrib-9.3
+RUN apt-get install -y nodejs --no-install-recommends
 
 RUN rm -rf /var/lib/apt/lists/*
 
